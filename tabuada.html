@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+
+<script>
+	
+	function pulaLinha() {
+
+		document.write("<br><br>");	//pula linha = "<br>"'"
+	}
+
+	function mostra(frase) {
+
+		document.write(frase);//a função recebe uma frase, no document.write preciso digitar algo para receber 
+		pulaLinha();
+	}
+    var multiplicador = 1;//declarando variavel multiplicador e falando que é 1
+
+    for(var multrplicador = 1; multiplicador <= 10; multiplicador + 1){//sempre vai fazer a operação de 7*multiplicador (com o primeiro sendo 1), até o multiplicador virar 10, até lá acontece a operação sempre somando +1 ao multiplicador depois da conta.
+
+     mostra(7* multiplicador);//7*multiplicador que vai ser dito no for acima
+    }
+
+    mostra("FIM")//
+    </script>

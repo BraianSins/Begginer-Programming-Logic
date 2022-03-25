@@ -1,0 +1,35 @@
+
+
+<script>
+
+    var loginCadastrado = "bsins198@gmail.com";//variavel com meu login já direcionada  
+    var senhaCadastrada = "linha123*"; //variavel da senha já cadastrada
+
+    var maximoTentativas = 3;//deixando claro o maximo de tentativas
+    var tentativaAtual = 1;// vou usar para somar outros números
+
+    while(tentativaAtual <= maximoTentativas) {
+
+        var loginInformado = prompt("Informe seu login");// vai aparecer uma caixa pedindo o login
+        var senhaInformada = prompt("Informe sua senha");// vai aparecer uma caixa pedindo a senha
+
+        if( loginCadastrado == loginInformado && senhaCadastrada == senhaInformada ) {//login cadastrado recebe login informado E senha cadastrada recebe senha informada
+
+            alert("Bem-vindo ao sistema, " + loginInformado);//informo meu login
+
+            tentativaAtual = maximoTentativas; // acertou, então faço o gasto de todas as tentativas para sair do loop. Lá embaixo vai incrementar + 1! 
+
+        } else {
+
+            if (tentativaAtual == 3) {
+                alert("Número permitido de tentativas ultrapassado!");//se a pessoa errar a senha 3x, essa mensage, aparece
+            } else {
+                alert("Login inválido. Tente novamente");// se n]ao tiver chegado a 3 ainda, isso aparece
+            }
+        }
+
+       // vai para a próxima tentativa
+        tentativaAtual = tentativaAtual +1 // entra em loop e soma até 3 tentativas 
+    }
+
+</script>

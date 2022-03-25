@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {// pulaLinha faz pular linha (nesse caso faz pular duas)
+
+        document.write("<br><br>");//pula duas linhas em um comando
+}
+
+    function mostra(frase) {//função recebe document.write e pulaLinha
+
+        document.write(frase);
+        pulaLinha();//faz a função criada pra pular linha
+}
+
+    var vitorias = parseInt(prompt("Qual o número de vitórias do seu time?"));// prompt que recebe números
+
+    var empates = parseInt(prompt("Qual o número de empates do seu time?"));//prompt que recebe números
+
+    var pontos = vitorias * 3 + empates; // faz um cálculo ded vitorias * 3 + empates.
+
+    mostra("A pontuação do seu time é " + pontos);//mostra "texto + pontos"
+    if (pontos > 28){// if pontos > 28, mostra que o time tá melhor
+    mostra("Seu time está melhor do que o ano passado");// se meu time tá melhor, mostra esse texto
+}
+    if (pontos < 28){// esse if faz "se meus pontos < 28, ele mostra que foram menos que o ultimo ano"
+    mostra("Seu time está pior do que o ano passado");// esse IF mostra que o time tá pior
+    }
+    if (pontos == 28 ){// se o time tem == 28 pontos, ele tá igual ao ano passado
+    mostra("Seu time está igual ao ano passado");// mostra mensagem de time ==
+    }
+
+    mostra("FIM");// mostra mensagem de fim
+</script>

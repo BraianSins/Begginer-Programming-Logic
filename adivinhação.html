@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {//recebe pula linha
+
+        document.write("<br><br>");//pulinha
+
+}
+
+    function mostra(frase) {// essa função faz uso de uma frase (que eu vou escrever dps) e acrescenta o puLinha
+
+        document.write(frase);//escreve
+        pulaLinha();//faz isso ai ne
+}
+
+var numeroPensado = Math.round(Math.random()*100);// math.round(math.random()*x num) faz gerar número aleatório que vai ser arredondado 
+var tentativas = 1;
+while(tentativas <= 3){
+    var chute = parseInt(prompt("Digite seu chute"));// parseInt faz o prompt receber número
+
+    if(chute == numeroPensado){// chute 
+        mostra("Voce acertou, o número era " + numeroPensado);// ah é um mostra e fala isso dai
+        break;// ele quebra, dá um fim, no código para não entrar em looping
+    }
+    else{//se uma determinada linha de códigos for errada (nesse caso), o else vai falar isso aqui em baixo
+        mostra("Voce errou, o número pensado era " + numeroPensado + " seu chute foi " + chute);//mostra o texto que eu quero
+    }
+    tentativas++;//Os operadores ++ e -- são utilizados após o nome de uma variável e servem para incrementar (++) ou decrementar (--) uma unidade da variável, ou seja, somar 1 ou subtrair 1 do valor da variável.Os operadores ++ e -- são utilizados após o nome de uma variável e servem para incrementar (++) ou decrementar (--) uma unidade da variável, ou seja, somar 1 ou subtrair 1 do valor da variável.
+
+
+    
+
+}
+
+</script>

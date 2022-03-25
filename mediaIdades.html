@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+<script>
+	
+	function pulaLinha() {
+
+		document.write("<br><br>");	//pula linha = "<br>"
+	}
+
+	function mostra(frase) {
+
+		document.write(frase);//a função recebe uma frase, no document.write preciso digitar algo para receber 
+		pulaLinha();
+	}
+    // botar 3
+    var totalFamiliares = parseInt(prompt("Insira aqui quantos familiares são"));
+    
+    var numero = 1;
+    var totalIdades = 0;
+
+    while(numero <= totalFamiliares){
+        var idade = parseInt(prompt('informe a idade do familiar'));
+        totalIdades= totalIdades+idade;
+        numero++//Incrementa valor de uma variável, x++ é o mesmo que x=x+1 
+    }
+    var mediaDasIdades = totalIdades/totalFamiliares
+    mostra("A média das idades dos familiares é " + mediaDasIdades);
+    mostra("Fim")
+</script>
